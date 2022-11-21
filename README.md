@@ -18,6 +18,36 @@ If you find this package useful, please don't forget to star ⭐️ the repo, as
 </p>
 <hr>
 
+## Requirements
+
+- node
+- npm
+- cmake-js
+
+## build
+
+### build with npm
+
+```shell
+npm i bsdiff-node
+```
+
+### build with cmake
+
+```shell
+mkdir .build
+cd .build
+cmake ..
+make
+```
+
+### build when corss
+
+when use `npm`, modify `cmake-js compile` in `package.json` with `cmake-js complie -CDCMAKE_TOOLCHAIN_FILE=toolchain.cmake`.
+
+when use `cmake`, use `cmake .. -CDCMAKE_TOOLCHAIN_FILE=toolchain.cmake` to indicate it.
+
+A `toolchain.cmake` example show below `cmake/toolchain.cmake`.
 
 ## Installation
 
